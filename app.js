@@ -4,7 +4,7 @@ const Reminder = require('./models/reminder');
 mongoose.connect('mongodb://localhost:27017/reminderbot', { useNewUrlParser: true });
 const TelegramBot = require('node-telegram-bot-api');
 
-const token = '680500488:AAGqNib5qZFdpGMDy9dVKCCY7I86836dXBc';
+const token = '----Your token from telegram BigFatherBot--------';
 const bot = new TelegramBot(token, {polling: true});
 
 bot.onText(/\/start/, (msg, match) => {
